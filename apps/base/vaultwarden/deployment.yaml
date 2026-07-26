@@ -21,7 +21,7 @@ spec:
         - name: vaultwarden
           image: vaultwarden/server:1.32.7
           ports:
-            - containerPort: 8080
+            - containerPort: 80
 
           envFrom:
             - secretRef:
