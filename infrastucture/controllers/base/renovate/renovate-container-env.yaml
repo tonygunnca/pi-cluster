@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+    RENOVATE_TOKEN: ENC[AES256_GCM,data:ixO8HtTB0j98EK5JsYIsF0DQAaRYpkvIoxq4DI006gmFoqvInZNKrpLoHdLbEEqs/XZdmW1c0tQ=,iv:Rx1p6i1SVoNOBa+POxSomJYoPQ90YZtfkNNdNptvoYo=,tag:QAnc39exiFaNpj2g/SJckg==,type:str]
+kind: Secret
+metadata:
+    name: linkding-container-env
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpTnVhQlc0TzVtbnJWcHc4
+            M0ZielZsL1lpbFh1NjFzb2NLNnYybzJDbm1ZCmNPWVh6eERJVEtjUklObG5aaFQ4
+            UVpmRVl5ZFRMZGZLdmdHTnhHM0dPS3MKLS0tIGNQNnF3MVhzSDFQeG9Sa011RlMv
+            ZGNZTytES2dzZWR6VkF1MlI4dndOZW8KGYtD7LAu2PBcRpsyqQ6ly5oXWDWvNOEo
+            DttFrW32kg7r9sSLtd7Cgh+gWjKaE0qlvs3vvfAkxbcy8Awl5mg04Q==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1nfr8qwl3hs6nejnerd8zhchtf3j335f3tp3qct7c2zvks59yrghsy9hejk
+    encrypted_regex: ^(data|stringData)$
+    lastmodified: "2026-07-28T10:22:38Z"
+    mac: ENC[AES256_GCM,data:/ufuAc+aSZ9fG6RGzJTOtgGuxEzuSN9vg6vnaO9s7Ajfl7zJ6hsw4tDh0sMr1dproF8U4dFW89bzVXkBgjDNIm9NfWwVI3isoaMBZ4JPID6wikYBpp8XiT2QiiMBgnEfSKdX0QfzbGbg2Ez1Ir7fvpHdCtYSbgSpImSiiC/7LuQ=,iv:NhheC8oSQo3ISilZMhh+XtgQo6fPexhwsAxz/c+exWs=,tag:lItK3UZdOEZcqxHSpVzehQ==,type:str]
+    version: 3.13.3
