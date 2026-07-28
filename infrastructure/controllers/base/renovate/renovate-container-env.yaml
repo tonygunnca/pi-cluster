@@ -3,7 +3,7 @@ data:
     RENOVATE_TOKEN: ENC[AES256_GCM,data:ixO8HtTB0j98EK5JsYIsF0DQAaRYpkvIoxq4DI006gmFoqvInZNKrpLoHdLbEEqs/XZdmW1c0tQ=,iv:Rx1p6i1SVoNOBa+POxSomJYoPQ90YZtfkNNdNptvoYo=,tag:QAnc39exiFaNpj2g/SJckg==,type:str]
 kind: Secret
 metadata:
-    name: linkding-container-env
+    name: renovate-container-env
 sops:
     age:
         - enc: |
