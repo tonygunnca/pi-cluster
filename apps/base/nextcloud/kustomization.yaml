@@ -7,3 +7,4 @@ resources:
   - redis-deployment.yaml
   - nextcloud-pvc.yaml
   - nextcloud-deployment.yaml
+  - nextcloud-cron-cronjob.yaml
