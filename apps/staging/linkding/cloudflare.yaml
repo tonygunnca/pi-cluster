@@ -81,7 +81,9 @@ data:
       service: http://linkding:9090
     - hostname: vault.tonygunnca.com
       service: http://vaultwarden.vaultwarden.svc.cluster.local:80
-    
+    - hostname: navidrome.tonygunnca.com
+      service: http://navidrome.navidrome.svc.cluster.local:4533
+      
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
     # in the connection from cloudflared to your local service, not from the internet to cloudflared.
