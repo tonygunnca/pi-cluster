@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nextcloud
-          image: nextcloud:34-apache
+          image: nextcloud:29-apache
           env:
             - name: POSTGRES_HOST
               value: postgres
