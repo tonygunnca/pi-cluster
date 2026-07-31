@@ -4,5 +4,21 @@
     "fileMatch": [
       "\\.yaml$"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["major-update", "needs-manual-review"]
+    },
+    {
+      "matchPackageNames": ["nextcloud", "postgres"],
+      "automerge": false,
+      "labels": ["stateful-service", "needs-manual-review"]
+    }
+  ]
 }
