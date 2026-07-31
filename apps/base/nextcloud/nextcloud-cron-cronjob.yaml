@@ -16,7 +16,7 @@ spec:
             runAsGroup: 33
           containers:
             - name: nextcloud-cron
-              image: nextcloud:34-apache
+              image: nextcloud:29-apache
               command: ["php", "-f", "/var/www/html/cron.php"]
               env:
                 - name: POSTGRES_HOST
