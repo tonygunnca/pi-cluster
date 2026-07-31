@@ -11,17 +11,24 @@ data:
             widgets:
               - type: monitor
                 title: Services
+                cache: 1m
                 sites:
                   - title: Navidrome
                     url: https://navidrome.tonygunnca.com
+                    check-url: http://navidrome.navidrome.svc.cluster.local:4533
+                    icon: si:navidrome
                   - title: Nextcloud
                     url: https://nextcloud.tonygunnca.com
+                    check-url: http://nextcloud.nextcloud.svc.cluster.local:80
+                    icon: si:nextcloud
                   - title: Vaultwarden
-                    url: https://vaultwarden.tonygunnca.com
+                    url: https://vault.tonygunnca.com
+                    check-url: http://vaultwarden.vaultwarden.svc.cluster.local:80
+                    icon: si:vaultwarden
                   - title: Linkding
                     url: https://linkding.tonygunnca.com
-                  - title: Grafana
-                    url: https://grafana.tonygunnca.com
+                    check-url: http://linkding.linkding.svc.cluster.local:9090
+                    icon: si:linkding
               - type: server-stats
                 servers:
                   - type: local
