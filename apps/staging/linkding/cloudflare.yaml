@@ -75,7 +75,7 @@ data:
     # Serves the metrics server under /metrics and the readiness server under /ready
     metrics: 0.0.0.0:2000
     no-autoupdate: true
-
+    
     ingress:
     - hostname: linkding.tonygunnca.com
       service: http://linkding:9090
@@ -89,7 +89,7 @@ data:
       service: http://glance.glance.svc.cluster.local:8080
     - hostname: hello.example.com
       service: hello_world
-    - service: http_status:404    
+    - service: http_status:404 
       
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
