@@ -84,7 +84,12 @@ data:
     - hostname: navidrome.tonygunnca.com
       service: http://navidrome.navidrome.svc.cluster.local:4533
     - hostname: nextcloud.tonygunnca.com
-      service: http://nextcloud.nextcloud.svc.cluster.local:80  
+      service: http://nextcloud.nextcloud.svc.cluster.local:80
+    - hostname: glance.tonygunnca.com
+      service: http://glance.glance.svc.cluster.local:8080
+    - hostname: hello.example.com
+      service: hello_world
+    - service: http_status:404    
       
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
     # issues. If hello.example.com resolves and tunnel.example.com does not, then the problem is
