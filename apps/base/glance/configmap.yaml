@@ -19,7 +19,6 @@ data:
                     icon: si:navidrome
                   - title: Nextcloud
                     url: https://nextcloud.tonygunnca.com
-                    check-url: http://nextcloud.nextcloud.svc.cluster.local:80
                     icon: si:nextcloud
                   - title: Vaultwarden
                     url: https://vault.tonygunnca.com
