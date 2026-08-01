@@ -16,10 +16,9 @@ data:
             widget:
               type: jellyfin
               url: http://jellyfin.jellyfin.svc.cluster.local:8096
-              key: 5448aaf9d7144617b0e8a67f0699e858
+              key: your-jellyfin-api-key
               enableBlocks: true
               enableNowPlaying: true
-
         - Navidrome:
             icon: navidrome.png
             href: https://navidrome.tonygunnca.com
@@ -27,10 +26,9 @@ data:
             widget:
               type: navidrome
               url: http://navidrome.navidrome.svc.cluster.local:4533
-              user: tonyg
-              token: 23cc410ce753ae673e45c80dedd4e97e
-              salt: 6d0824
-
+              user: your-navidrome-username
+              token: your-md5-token
+              salt: your-salt
     - Storage & Sync:
         - Nextcloud:
             icon: nextcloud.png
@@ -40,13 +38,11 @@ data:
               type: nextcloud
               url: http://nextcloud.nextcloud.svc.cluster.local:80
               key: your-nc-token
-
     - Utilities:
         - Vaultwarden:
             icon: vaultwarden.png
             href: https://vault.tonygunnca.com
             description: Password Manager
-
         - Linkding:
             icon: linkding.png
             href: https://linkding.tonygunnca.com
@@ -56,11 +52,9 @@ data:
         cpu: true
         memory: true
         disk: /
-
     - search:
         provider: duckduckgo
         target: _blank
-
     - datetime:
         text_size: xl
         format:
@@ -71,6 +65,8 @@ data:
   kubernetes.yaml: |
     ""
   docker.yaml: |
+    ""
+  proxmox.yaml: |
     ""
   custom.css: ""
   custom.js: ""
