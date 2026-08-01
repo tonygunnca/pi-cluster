@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trilium
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate  # single RWO volume, avoid two pods fighting over it
+  selector:
+    matchLabels:
+      app: trilium
+  template:
+    metadata:
+      labels:
+        app: trilium
+    spec:
+      containers:
+        - name: trilium
+          image: triliumnext/trilium:0.104.1
+          ports:
+            - containerPort: 8080
+          env:
+            - name: TRILIUM_DATA_DIR
+              value: /home/node/trilium-data
+          volumeMounts:
+            - name: data
+              mountPath: /home/node/trilium-data
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              memory: 512Mi
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: trilium-data
