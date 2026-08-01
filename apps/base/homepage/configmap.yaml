@@ -13,31 +13,15 @@ data:
             icon: jellyfin.png
             href: https://jellyfin.tonygunnca.com
             description: Movies & TV
-            widget:
-              type: jellyfin
-              url: http://jellyfin.jellyfin.svc.cluster.local:8096
-              key: your-jellyfin-api-key
-              enableBlocks: true
-              enableNowPlaying: true
         - Navidrome:
             icon: navidrome.png
             href: https://navidrome.tonygunnca.com
             description: Music
-            widget:
-              type: navidrome
-              url: http://navidrome.navidrome.svc.cluster.local:4533
-              user: your-navidrome-username
-              token: your-md5-token
-              salt: your-salt
     - Storage & Sync:
         - Nextcloud:
             icon: nextcloud.png
             href: https://nextcloud.tonygunnca.com
             description: Cloud Storage
-            widget:
-              type: nextcloud
-              url: http://nextcloud.nextcloud.svc.cluster.local:80
-              key: your-nc-token
     - Utilities:
         - Vaultwarden:
             icon: vaultwarden.png
