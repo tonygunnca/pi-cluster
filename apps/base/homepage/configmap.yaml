@@ -10,12 +10,62 @@ data:
   services.yaml: |
     - Media:
         - Jellyfin:
-            href: https://jellyfin.tonygunnca.com
             icon: jellyfin.png
+            href: https://jellyfin.tonygunnca.com
+            description: Movies & TV
+            widget:
+              type: jellyfin
+              url: http://jellyfin.jellyfin.svc.cluster.local:8096
+              key: 5448aaf9d7144617b0e8a67f0699e858
+              enableBlocks: true
+              enableNowPlaying: true
+
+        - Navidrome:
+            icon: navidrome.png
+            href: https://navidrome.tonygunnca.com
+            description: Music
+            widget:
+              type: navidrome
+              url: http://navidrome.navidrome.svc.cluster.local:4533
+              user: tonyg
+              token: 23cc410ce753ae673e45c80dedd4e97e
+              salt: 6d0824
+
+    - Storage & Sync:
+        - Nextcloud:
+            icon: nextcloud.png
+            href: https://nextcloud.tonygunnca.com
+            description: Cloud Storage
+            widget:
+              type: nextcloud
+              url: http://nextcloud.nextcloud.svc.cluster.local:80
+              key: your-nc-token
+
+    - Utilities:
+        - Vaultwarden:
+            icon: vaultwarden.png
+            href: https://vault.tonygunnca.com
+            description: Password Manager
+
+        - Linkding:
+            icon: linkding.png
+            href: https://linkding.tonygunnca.com
+            description: Bookmarks
   widgets.yaml: |
     - resources:
         cpu: true
         memory: true
+        disk: /
+
+    - search:
+        provider: duckduckgo
+        target: _blank
+
+    - datetime:
+        text_size: xl
+        format:
+          timeStyle: short
+          dateStyle: long
   bookmarks.yaml: |
     []
   kubernetes.yaml: |
@@ -24,4 +74,3 @@ data:
     ""
   custom.css: ""
   custom.js: ""
-    []
