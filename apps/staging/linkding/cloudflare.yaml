@@ -89,8 +89,6 @@ data:
       service: http://glance.glance.svc.cluster.local:8080
     - hostname: jellyfin.tonygunnca.com
       service: http://jellyfin.jellyfin.svc.cluster.local:8096
-    - hostname: trilium.tonygunnca.com
-      service: http://trilium.trilium.svc.cluster.local:8080
     - hostname: hello.example.com
       service: hello_world
     - service: http_status:404 
