@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    type: Recreate  # single RWO volume, avoid two pods fighting over it
+    type: Recreate  
   selector:
     matchLabels:
       app: trilium
@@ -14,6 +14,7 @@ spec:
       labels:
         app: trilium
     spec:
+      enableServiceLinks: false
       containers:
         - name: trilium
           image: triliumnext/trilium:v0.104.1
