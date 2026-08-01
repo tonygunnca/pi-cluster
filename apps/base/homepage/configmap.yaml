@@ -10,11 +10,18 @@ data:
   services.yaml: |
     - Media:
         - Jellyfin:
-            href: https://jellyfin.yourdomain.com
+            href: https://jellyfin.tonygunnca.com
             icon: jellyfin.png
   widgets.yaml: |
     - resources:
         cpu: true
         memory: true
   bookmarks.yaml: |
+    []
+  kubernetes.yaml: |
+    ""
+  docker.yaml: |
+    ""
+  custom.css: ""
+  custom.js: ""
     []
