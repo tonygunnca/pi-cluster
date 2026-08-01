@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: trilium
-          image: triliumnext/trilium:latest
+          image: triliumnext/trilium:v0.104.1
           ports:
             - containerPort: 8080
           env:
