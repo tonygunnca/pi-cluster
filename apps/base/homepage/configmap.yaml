@@ -40,10 +40,40 @@ data:
         provider: duckduckgo
         target: _blank
     - datetime:
-        text_size: xl
+        locale: nl
         format:
-          timeStyle: short
+          timeStyle: long
           dateStyle: long
+    - openweathermap:
+        label: los angeles #optional
+        latitude: 34.0522
+        longitude: -118.2437
+        units: metric # or imperial
+        provider: openweathermap
+        apiKey: youropenweathermapkey # required only if not using provider, this reveals api key in requests
+        cache: 5 # Time in minutes to cache API responses, to stay within limits
+        format: # optional, Intl.NumberFormat options
+          maximumFractionDigits: 1
+    - kubernetes:
+        cluster:
+        # Shows cluster-wide statistics
+        show: true
+        # Shows the aggregate CPU stats
+        cpu: true
+        # Shows the aggregate memory stats
+        memory: true
+        # Shows a custom label
+        showLabel: true
+        label: "cluster"
+      nodes:
+        # Shows node-specific statistics
+        show: true
+        # Shows the CPU for each node
+        cpu: true
+        # Shows the memory for each node
+        memory: true
+        # Shows the label, which is always the node name
+        showLabel: true
   bookmarks.yaml: |
     []
   kubernetes.yaml: |
