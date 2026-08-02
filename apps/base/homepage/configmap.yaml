@@ -31,6 +31,10 @@ data:
             icon: linkding.png
             href: https://linkding.tonygunnca.com
             description: Bookmarks
+        - Stirling-PDF:
+            icon: https://cdn.jsdelivr.net/npm/@thesvg/icons/icons/stirling-pdf.svg
+            href: https://stirlingpdf.tonygunnca.com
+            description: PDF Editor
   widgets.yaml: |
     - resources:
         cpu: true
