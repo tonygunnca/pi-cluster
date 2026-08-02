@@ -12,20 +12,16 @@ spec:
       labels:
         app: stirling-pdf
     spec:
-      securityContext:
-        fsGroup: 1000
-        runAsUser: 1000
-        runAsGroup: 1000
-
       containers:
         - name: stirling-pdf
           image: stirlingtools/stirling-pdf:2.14.2
           ports:
             - containerPort: 8080
-
-          securityContext:
-            allowPrivilegeEscalation: false
-
+          env:
+            - name: PUID
+              value: "1000"
+            - name: PGID
+              value: "1000"
           volumeMounts:
             - name: stirling-pdf-data
               mountPath: /configs
