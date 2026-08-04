@@ -92,7 +92,9 @@ data:
     - hostname: homepage.tonygunnca.com
       service: http://homepage.homepage.svc.cluster.local:80
     - hostname: stirlingpdf.tonygunnca.com
-      service: http://stirling-pdf.stirling-pdf.svc.cluster.local:8080 
+      service: http://stirling-pdf.stirling-pdf.svc.cluster.local:8080
+    - hostname: zennotes.tonygunnca.com
+      service: http://zennotes.zennotes.svc.cluster.local:80 
     - hostname: hello.example.com
       service: hello_world
     - service: http_status:404 
