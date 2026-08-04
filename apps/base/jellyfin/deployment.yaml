@@ -26,7 +26,7 @@ spec:
           volumeMounts:
             - name: jellyfin-movies
               mountPath: /media
-              readOnly: true
+              readOnly: false
             - name: jellyfin-config
               mountPath: /config
 
