@@ -21,6 +21,8 @@ spec:
           env:
             - name: ZENNOTES_BIND
               value: "0.0.0.0:7878"
+            - name: ZENNOTES_BEHIND_TLS
+              value: "1"
             - name: ZENNOTES_AUTH_TOKEN
               valueFrom:
                 secretKeyRef:
