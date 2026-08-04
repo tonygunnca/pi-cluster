@@ -13,6 +13,12 @@ data:
             icon: jellyfin.png
             href: https://jellyfin.tonygunnca.com
             description: Movies & TV
+            widget:
+              type: jellyfin
+              url: http://jellyfin.jellyfin.svc.cluster.local:8096
+              key: 
+              enableBlocks: true
+              enableNowPlaying: true
         - Navidrome:
             icon: navidrome.png
             href: https://navidrome.tonygunnca.com
