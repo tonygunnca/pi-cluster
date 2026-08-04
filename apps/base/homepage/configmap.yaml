@@ -23,6 +23,12 @@ data:
             icon: navidrome.png
             href: https://navidrome.tonygunnca.com
             description: Music
+            widget:
+              type: navidrome
+              url: http://navidrome.navidrome.svc.cluster.local:4533
+              user: "tonyg"
+              token: "5297cc52452f6b59217a80be4cf25099"
+              salt: "REDACTED"
     - Storage & Sync:
         - Nextcloud:
             icon: nextcloud.png
