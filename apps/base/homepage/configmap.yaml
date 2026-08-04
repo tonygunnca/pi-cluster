@@ -27,7 +27,7 @@ data:
               type: navidrome
               url: http://navidrome.navidrome.svc.cluster.local:4533
               user: "tonyg"
-              token: "8ba6af57cda3c9fcd6775ae20d9610ce"
+              token: "REDACTED"
               salt: "REDACTED"
     - Storage & Sync:
         - Nextcloud:
