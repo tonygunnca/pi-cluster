@@ -44,7 +44,7 @@ data:
             href: https://linkding.tonygunnca.com
             description: Bookmarks
         - Stirling-PDF:
-            icon: https://cdn.jsdelivr.net/npm/@thesvg/icons/icons/stirling-pdf.svg
+            icon: stirling-pdf.svg
             href: https://stirlingpdf.tonygunnca.com
             description: PDF Editor
         - ZenNotes:
