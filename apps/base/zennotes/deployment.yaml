@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: zennotes
-          image: adibhanna/zennotes@sha256:440cdd056d080019fc0488795e240f0cdb988e82522164ae3a23013d0cdf2a42
+          image: adibhanna/zennotes@sha256:a1a417461ab9ae2f6b270b052f19c841ede5917c2e771f702d2d84b277040c71
           env:
             - name: ZENNOTES_BIND
               value: "0.0.0.0:7878"
