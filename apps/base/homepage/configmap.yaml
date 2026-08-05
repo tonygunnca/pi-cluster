@@ -47,10 +47,6 @@ data:
             icon: stirling-pdf.svg
             href: https://stirlingpdf.tonygunnca.com
             description: PDF Editor
-        - ZenNotes:
-            icon: https://zennotes.org/favicon-32.png
-            href: https://zennotes.tonygunnca.com
-            description: Notes
   widgets.yaml: |
     - resources:
         cpu: true
