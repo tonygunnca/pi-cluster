@@ -51,6 +51,10 @@ data:
             icon: stirling-pdf.svg
             href: https://stirlingpdf.tonygunnca.com
             description: PDF Editor
+        - Vikunja:
+            icon: vikunja.svg
+            href: https://vikunja.tonygunnca.com
+            description: Task Manager
   widgets.yaml: |
     - resources:
         cpu: true
