@@ -29,6 +29,10 @@ data:
               user: "{{HOMEPAGE_VAR_NAVIDROME_USER}}"
               token: "{{HOMEPAGE_VAR_NAVIDROME_TOKEN}}"
               salt: "{{HOMEPAGE_VAR_NAVIDROME_SALT}}"
+        - freshrss:
+            icon: freshrss.png
+            href: https://freshrss.tonygunnca.com
+            description: News Reader
     - Storage & Sync:
         - Nextcloud:
             icon: nextcloud.png
