@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vikunja
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vikunja
+  template:
+    metadata:
+      labels:
+        app: vikunja
+    spec:
+      containers:
+        - name: vikunja
+          image: vikunja/vikunja:2.5.0
+          ports:
+            - containerPort: 3456
+          env:
+            - name: VIKUNJA_SERVICE_PUBLICURL
+              value: "https://vikunja.tonygunnca.com"
+          volumeMounts:
+            - name: vikunja-data
+              mountPath: /app/vikunja/files
+      volumes:
+        - name: vikunja-data
+          persistentVolumeClaim:
+            claimName: vikunja-data-pvc
