@@ -20,9 +20,11 @@ spec:
           env:
             - name: VIKUNJA_SERVICE_PUBLICURL
               value: "https://vikunja.tonygunnca.com"
+            - name: VIKUNJA_FILES_BASEPATH
+              value: "/db/files"
           volumeMounts:
             - name: vikunja-data
-              mountPath: /app/vikunja/files
+              mountPath: /db
       volumes:
         - name: vikunja-data
           persistentVolumeClaim:
