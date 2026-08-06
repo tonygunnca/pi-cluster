@@ -96,7 +96,7 @@ data:
     - hostname: freshrss.tonygunnca.com
       service: http://freshrss.freshrss.svc.cluster.local:80
     - hostname: vikunja.tonygunnca.com
-      service: http://vikunja.vikunja.svc.cluster.local:3456 
+      service: http://vikunja.vikunja.svc.cluster.local:3456
     - hostname: hello.example.com
       service: hello_world
-    - service: http_status:404 
+    - service: http_status:404
