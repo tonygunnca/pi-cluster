@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: freshrss-actualize
+  namespace: <freshrss-namespace>
+spec:
+  schedule: "*/30 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: freshrss-actualize
+              image: freshrss/freshrss:1.29.1
+              command:
+                - php
+                - /var/www/FreshRSS/app/actualize_script.php
+              volumeMounts:
+                - name: freshrss-data
+                  mountPath: /var/www/FreshRSS/data
+          volumes:
+            - name: freshrss-data
+              persistentVolumeClaim:
+                claimName: <your-freshrss-pvc-name>
+          restartPolicy: OnFailure
