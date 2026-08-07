@@ -21,5 +21,5 @@ spec:
           volumes:
             - name: freshrss-data
               persistentVolumeClaim:
-                claimName: <your-freshrss-pvc-name>
+                claimName: freshrss-data-pvc
           restartPolicy: OnFailure
