@@ -55,6 +55,10 @@ data:
             icon: vikunja.svg
             href: https://vikunja.tonygunnca.com
             description: Task Manager
+        - SearXNG
+           icon: searxng.svg
+           href: https://searxng.tonygunnca.com
+           description: Search
   widgets.yaml: |
     - resources:
         cpu: true

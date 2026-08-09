@@ -1,0 +1,18 @@
+# configmap.yaml — settings.yml override
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: searxng-settings
+  namespace: searxng
+data:
+  settings.yml: |
+    use_default_settings: true
+    server:
+      secret_key: "@SEARXNG_SECRET@"   # replaced at container start via envsubst, see deployment
+      limiter: false                    
+      image_proxy: true
+    search:
+      safe_search: 0
+      autocomplete: "duckduckgo"
+    ui:
+      static_use_hash: true
