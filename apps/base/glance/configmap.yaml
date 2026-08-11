@@ -44,6 +44,22 @@ data:
                 servers:
                   - type: local
                     name: pi-cluster
+              - type: rss
+                title: News
+                limit: 10
+                collapse-after: 5
+                cache: 20m
+                feeds:
+                  - url: https://news.ycombinator.com/rss
+                    title: Hacker News
+                  - url: https://www.theverge.com/rss/index.xml
+                    title: The Verge
+                  - url: https://selfh.st/rss/
+                    title: Self-Hosted
+                  - url: https://www.reddit.com/r/homelab/.rss
+                    title: r/homelab
+                  - url: https://www.reddit.com/r/kubernetes/.rss
+                    title: r/kubernetes
           - size: small
             widgets:
               - type: weather
