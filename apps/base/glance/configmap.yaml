@@ -50,3 +50,11 @@ data:
                 location: Los Angeles, United States
               - type: clock
                 hour-format: 24h
+
+      - name: Homepage
+        columns:
+          - size: full
+            widgets:
+              - type: iframe
+                source: https://homepage.tonygunnca.com
+                height: 800
