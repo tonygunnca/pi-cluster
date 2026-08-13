@@ -30,7 +30,7 @@ spec:
               value: sparkyfitness
           readinessProbe:
             httpGet:
-              path: /
+              path: /api/version/current
               port: 3010
             initialDelaySeconds: 10
             periodSeconds: 10
