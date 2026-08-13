@@ -99,6 +99,8 @@ data:
       service: http://vikunja.vikunja.svc.cluster.local:3456
     - hostname: searxng.tonygunnca.com
       service: http://searxng.searxng.svc.cluster.local:8080
+    - hostname: fitness.tonygunnca.com
+      service: http://sparkyfitness-frontend.sparkyfitness.svc.cluster.local:80
     - hostname: hello.example.com
       service: hello_world
     - service: http_status:404
