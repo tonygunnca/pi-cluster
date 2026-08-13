@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: sparkyfitness
-          image: ghcr.io/codewithcj/sparkyfitness:REPLACE_WITH_PINNED_TAG
+          image: codewithcj/sparkyfitness:v1.6.1
           ports:
             - containerPort: 3000
           envFrom:
