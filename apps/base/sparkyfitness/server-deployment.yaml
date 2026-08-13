@@ -28,6 +28,8 @@ spec:
               value: "5432"
             - name: SPARKY_FITNESS_DB_NAME
               value: sparkyfitness
+            - name: SPARKY_FITNESS_DISABLE_SIGNUP
+              value: "true"
           readinessProbe:
             httpGet:
               path: /api/version/current
