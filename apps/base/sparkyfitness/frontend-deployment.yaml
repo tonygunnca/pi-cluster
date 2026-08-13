@@ -1,34 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sparkyfitness-app
+  name: sparkyfitness-frontend
   namespace: sparkyfitness
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sparkyfitness-app
+      app: sparkyfitness-frontend
   template:
     metadata:
       labels:
-        app: sparkyfitness-app
+        app: sparkyfitness-frontend
     spec:
       containers:
-        - name: sparkyfitness
+        - name: sparkyfitness-frontend
           image: codewithcj/sparkyfitness:v1.6.1
           ports:
-            - containerPort: 3000
-          envFrom:
-            - secretRef:
-                name: sparkyfitness-secrets
+            - containerPort: 80
           env:
-            - name: NODE_ENV
-              value: production
-            - name: PORT
-              value: "3000"
+            - name: SPARKY_FITNESS_SERVER_HOST
+              value: sparkyfitness-server
+            - name: SPARKY_FITNESS_SERVER_PORT
+              value: "3010"
           readinessProbe:
             httpGet:
               path: /
-              port: 3000
+              port: 80
             initialDelaySeconds: 10
             periodSeconds: 10

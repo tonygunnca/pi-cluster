@@ -5,6 +5,8 @@ resources:
   - db-pvc.yaml
   - db-deployment.yaml
   - db-service.yaml
-  - app-deployment.yaml
-  - app-service.yaml
+  - server-deployment.yaml
+  - server-service.yaml
+  - frontend-deployment.yaml
+  - frontend-service.yaml
   - secret.sops.yaml
