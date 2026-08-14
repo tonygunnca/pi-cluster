@@ -60,7 +60,7 @@ data:
             href: https://searxng.tonygunnca.com
             description: Search
         - SparkyFitness:
-            icon: sparkyfitness.png
+            icon: sparky-fitness.png
             href: https://fitness.tonygunnca.com
             description: Nutrition & fitness tracker
             widget:
