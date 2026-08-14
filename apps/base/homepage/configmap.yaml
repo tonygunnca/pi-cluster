@@ -59,6 +59,15 @@ data:
             icon: searxng.svg
             href: https://searxng.tonygunnca.com
             description: Search
+        - SparkyFitness:
+            icon: sparkyfitness.png
+            href: https://fitness.tonygunnca.com
+            description: Nutrition & fitness tracker
+            widget:
+              type: sparkyfitness
+              url: https://fitness.tonygunnca.com
+              key: "{{HOMEPAGE_VAR_SPARKYFITNESS_KEY}}"
+              fields: ["eaten", "burned", "remaining", "steps"]
   widgets.yaml: |
     - resources:
         cpu: true
