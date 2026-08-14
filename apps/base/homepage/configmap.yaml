@@ -46,6 +46,13 @@ data:
             icon: vaultwarden.png
             href: https://vault.tonygunnca.com
             description: Password Manager
+        - Linkwarden:
+            icon: linkwarden.png
+            href: https://linkwarden.tonygunnca.com
+            widget:
+              type: linkwarden
+              url: http://linkwarden.linkwarden.svc.cluster.local:3000
+              key: {{HOMEPAGE_VAR_LINKWARDEN_API_KEY}}
     - Utilities:
         - Linkding:
             icon: linkding.png
