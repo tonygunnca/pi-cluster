@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linkwarden-postgres
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: linkwarden-postgres
+  template:
+    metadata:
+      labels:
+        app: linkwarden-postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - secretRef:
+                name: linkwarden-postgres-env
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+              subPath: pgdata # avoids "lost+found" initdb issue on some CSI volumes
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: linkwarden-postgres-pvc
