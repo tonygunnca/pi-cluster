@@ -33,16 +33,20 @@ data:
             icon: freshrss.png
             href: https://freshrss.tonygunnca.com
             description: News Reader
-    - Storage & Sync:
+    - Lifestyle:
         - Nextcloud:
             icon: nextcloud.png
             href: https://nextcloud.tonygunnca.com
             description: Cloud Storage
-    - Utilities:
+        - Vikunja:
+            icon: vikunja.svg
+            href: https://vikunja.tonygunnca.com
+            description: Task Manager
         - Vaultwarden:
             icon: vaultwarden.png
             href: https://vault.tonygunnca.com
             description: Password Manager
+    - Utilities:
         - Linkding:
             icon: linkding.png
             href: https://linkding.tonygunnca.com
@@ -51,10 +55,6 @@ data:
             icon: stirling-pdf.svg
             href: https://stirlingpdf.tonygunnca.com
             description: PDF Editor
-        - Vikunja:
-            icon: vikunja.svg
-            href: https://vikunja.tonygunnca.com
-            description: Task Manager
         - SearXNG:
             icon: searxng.svg
             href: https://searxng.tonygunnca.com
