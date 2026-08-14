@@ -40,6 +40,9 @@ data:
                     url: https://freshrss.tonygunnca.com
                     check-url: http://freshrss.freshrss.svc.cluster.local:80
                     icon: si:freshrss
+                  - title: SparkyFitness
+                    url: https://fitness.tonygunnca.com
+                    check-url: https://fitness.tonygunnca.com/api/version/current
               - type: server-stats
                 servers:
                   - type: local
