@@ -39,4 +39,6 @@ data:
       service: http://sparkyfitness-frontend.sparkyfitness.svc.cluster.local:80
     - hostname: linkwarden.tonygunnca.com
       service: http://linkwarden.linkwarden.svc.cluster.local:3000
+    - hostname: memos.tonygunnca.com
+      service: http://memos.memos.svc.cluster.local:5230
     - service: http_status:404
