@@ -18,6 +18,9 @@ spec:
       containers:
         - name: memos
           image: neosmemo/memos:0.29.1
+          env:
+            - name: MEMOS_PORT
+              value: "5230"
           ports:
             - containerPort: 5230
           volumeMounts:
