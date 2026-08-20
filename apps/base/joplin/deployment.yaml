@@ -42,9 +42,3 @@ spec:
               port: 22300
             initialDelaySeconds: 20
             periodSeconds: 30
-          livenessProbe:
-            httpGet:
-              path: /api/ping
-              port: 22300
-            initialDelaySeconds: 20
-            periodSeconds: 30
