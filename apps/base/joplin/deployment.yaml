@@ -33,11 +33,15 @@ spec:
             - name: MAILER_ENABLED
               value: "0"
           readinessProbe:
-            httpGet:
-              path: /api/ping
+            tcpSocket:
               port: 22300
             initialDelaySeconds: 10
             periodSeconds: 15
+          livenessProbe:
+            tcpSocket:
+              port: 22300
+            initialDelaySeconds: 20
+            periodSeconds: 30
           livenessProbe:
             httpGet:
               path: /api/ping
