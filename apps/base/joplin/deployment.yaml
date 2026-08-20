@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: joplin-server
+  namespace: joplin
+  labels:
+    app: joplin-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: joplin-server
+  template:
+    metadata:
+      labels:
+        app: joplin-server
+    spec:
+      containers:
+        - name: joplin-server
+          image: joplin/server:3.6.15
+          ports:
+            - containerPort: 22300
+          envFrom:
+            - secretRef:
+                name: joplin-server-env
+          env:
+            - name: DB_CLIENT
+              value: "pg"
+            - name: APP_PORT
+              value: "22300"
+            - name: STORAGE_DRIVER
+              value: "Type=Database" 
+            - name: MAILER_ENABLED
+              value: "0"
+          readinessProbe:
+            httpGet:
+              path: /api/ping
+              port: 22300
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          livenessProbe:
+            httpGet:
+              path: /api/ping
+              port: 22300
+            initialDelaySeconds: 20
+            periodSeconds: 30
