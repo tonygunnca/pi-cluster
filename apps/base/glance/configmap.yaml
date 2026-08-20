@@ -16,7 +16,7 @@ data:
                   - title: Navidrome
                     url: https://navidrome.tonygunnca.com
                     check-url: http://navidrome.navidrome.svc.cluster.local:4533
-                    icon: si:navidrome
+                    icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/navidrome.svg
                   - title: Nextcloud
                     url: https://nextcloud.tonygunnca.com
                     icon: si:nextcloud
@@ -27,7 +27,7 @@ data:
                   - title: Linkding
                     url: https://linkding.tonygunnca.com
                     check-url: http://linkding.linkding.svc.cluster.local:9090
-                    icon: si:linkding
+                    icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/linkding.svg
                   - title: Jellyfin
                     url: https://jellyfin.tonygunnca.com
                     check-url: http://jellyfin.jellyfin.svc.cluster.local:8096
@@ -35,7 +35,7 @@ data:
                   - title: StirlingPDF
                     url: https://stirlingpdf.tonygunnca.com
                     check-url: http://stirling-pdf.stirling-pdf.svc.cluster.local:8080/api/v1/info/status
-                    icon: https://cdn.jsdelivr.net/npm/@thesvg/icons/icons/stirling-pdf.svg
+                    icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/stirling-pdf.svg
                   - title: FreshRSS
                     url: https://freshrss.tonygunnca.com
                     check-url: http://freshrss.freshrss.svc.cluster.local:80
@@ -43,7 +43,7 @@ data:
                   - title: LinkWarden
                     url: https://linkwarden.tonygunnca.com
                     check-url: http://linkwarden.linkwarden.svc.cluster.local:3000
-                    icon: si:linkwarden
+                    icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/linkwarden.svg
                   - title: Joplin
                     url: https://joplin.tonygunnca.com
                     check-url: https://joplin.tonygunnca.com/api/ping
