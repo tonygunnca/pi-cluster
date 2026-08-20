@@ -66,6 +66,10 @@ data:
             icon: searxng.svg
             href: https://searxng.tonygunnca.com
             description: Search
+        - Joplin:
+            icon: joplin.svg
+            href: https://joplin.tonygunnca.com
+            description: Notes
   widgets.yaml: |
     - resources:
         cpu: true

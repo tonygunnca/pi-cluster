@@ -44,6 +44,10 @@ data:
                     url: https://linkwarden.tonygunnca.com
                     check-url: http://linkwarden.linkwarden.svc.cluster.local:3000
                     icon: si:linkwarden
+                  - title: Joplin
+                    url: https://joplin.tonygunnca.com
+                    check-url: https://joplin.tonygunnca.com/api/ping
+                    icon: si:joplin
               - type: server-stats
                 servers:
                   - type: local
