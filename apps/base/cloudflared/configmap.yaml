@@ -34,7 +34,7 @@ data:
     - hostname: vikunja.tonygunnca.com
       service: http://vikunja.vikunja.svc.cluster.local:3456
     - hostname: searxng.tonygunnca.com
-      service: http://searxng.searxng.svc.cluster.local:80800
+      service: http://searxng.searxng.svc.cluster.local:8080
     - hostname: linkwarden.tonygunnca.com
       service: http://linkwarden.linkwarden.svc.cluster.local:3000
     - hostname: joplin.tonygunnca.com
