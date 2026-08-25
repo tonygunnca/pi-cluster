@@ -48,6 +48,14 @@ data:
                     url: https://joplin.tonygunnca.com
                     check-url: https://joplin.tonygunnca.com/api/ping
                     icon: si:joplin
+                  - title: Vikunja
+                    url: https://vikunja.tonygunnca.com
+                    check-url: http://vikunja.vikunja.svc.cluster.local:3456
+                    icon: si:vikunja
+                  - title: SearXNG
+                    url: https://searxng.tonygunnca.com
+                    check-url: http://searxng.searxng.svc.cluster.local:8080
+                    icon: si:searxng
               - type: server-stats
                 servers:
                   - type: local
