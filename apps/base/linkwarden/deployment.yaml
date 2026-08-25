@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: linkwarden
-          image: ghcr.io/linkwarden/linkwarden:v2.16.0
+          image: ghcr.io/linkwarden/linkwarden:v2.16.1
           ports:
             - containerPort: 3000
           envFrom:
