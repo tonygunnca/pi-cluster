@@ -4342,7 +4342,7 @@ prometheus:
     image:
       registry: quay.io
       repository: prometheus/prometheus
-      tag: v3.13.2-distroless
+      tag: v3.14.0-distroless
       sha: ""
       pullPolicy: IfNotPresent
 
