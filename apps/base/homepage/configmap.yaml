@@ -38,10 +38,6 @@ data:
             icon: nextcloud.png
             href: https://nextcloud.tonygunnca.com
             description: Cloud Storage
-        - Vikunja:
-            icon: vikunja.svg
-            href: https://vikunja.tonygunnca.com
-            description: Task Manager
         - Vaultwarden:
             icon: vaultwarden.png
             href: https://vault.tonygunnca.com
