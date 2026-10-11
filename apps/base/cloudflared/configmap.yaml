@@ -37,4 +37,6 @@ data:
       service: http://linkwarden.linkwarden.svc.cluster.local:3000
     - hostname: joplin.tonygunnca.com
       service: http://joplin-server.joplin.svc.cluster.local:22300
+    - hostname: notes.tonygunnca.com
+      service: http://futo-notes.futo-notes.svc.cluster.local:8080
     - service: http_status:404
