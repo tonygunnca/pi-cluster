@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: futo-notes
+  namespace: futo-notes
+spec:
+  selector:
+    app: futo-notes
+  ports:
+    - port: 8080
+      targetPort: 8080

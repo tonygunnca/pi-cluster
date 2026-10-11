@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: futo-notes
+  namespace: futo-notes
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate          # SQLite + RWO PVC
+  selector:
+    matchLabels: { app: futo-notes }
+  template:
+    metadata:
+      labels: { app: futo-notes }
+    spec:
+      enableServiceLinks: false   # avoid FUTO_NOTES_* env injection (Trilium lesson)
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        runAsNonRoot: true
+        fsGroup: 1000
+      initContainers:
+        - name: mkdirs
+          image: busybox:1.36
+          command: ["sh", "-c", "mkdir -p /data/db /data/blobs"]
+          volumeMounts: [{ name: data, mountPath: /data }]
+      containers:
+        - name: futo-notes
+          image: futotech/notes-server:v0.7.1@sha256:39d4b003f80bdc2025a5304d1e229945bc8fdd2cabcbd136c857079229e977aa
+          command: ["/usr/local/bin/futo-notes-server"]   # skip the chown entrypoint
+          env:
+            - { name: PORT, value: "8080" }
+            - { name: BLOB_DIR, value: /data/blobs }
+            - { name: DATABASE_URL, value: "sqlite:/data/db/notes.db" }
+            - name: FUTO_NOTES_PASSWORD
+              valueFrom:
+                secretKeyRef: { name: futo-notes-secret, key: FUTO_NOTES_PASSWORD }
+          ports: [{ containerPort: 8080 }]
+          readinessProbe:
+            httpGet: { path: /health, port: 8080 }
+          livenessProbe:
+            httpGet: { path: /health, port: 8080 }
+            initialDelaySeconds: 10
+          volumeMounts: [{ name: data, mountPath: /data }]
+      volumes:
+        - name: data
+          persistentVolumeClaim: { claimName: futo-notes-data }
