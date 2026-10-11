@@ -52,6 +52,9 @@ data:
                     url: https://searxng.tonygunnca.com
                     check-url: http://searxng.searxng.svc.cluster.local:8080
                     icon: si:searxng
+                  - title: FUTO Notes
+                    url: https://notes.tonygunnca.com
+                    check-url: http://futo-notes.futo-notes.svc.cluster.local:8080/health
               - type: server-stats
                 servers:
                   - type: local
