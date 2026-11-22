@@ -52,6 +52,10 @@ data:
                     url: https://searxng.tonygunnca.com
                     check-url: http://searxng.searxng.svc.cluster.local:8080
                     icon: si:searxng
+                  - title: Immich
+                    url: https://immich.tonygunnca.com
+                    check-url: http://immich-server.immich.svc.cluster.local:2283/api/server/ping
+                    icon: si:immich
                   - title: FUTO Notes
                     url: https://notes.tonygunnca.com
                     check-url: http://futo-notes.futo-notes.svc.cluster.local:8080/health
